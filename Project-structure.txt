@@ -1,0 +1,66 @@
+ecommerce-app/
+│
+├── src/
+│   ├── app/
+│   │   ├── core/
+│   │   │   ├── guards/
+│   │   │   ├── interceptors/
+│   │   │   ├── services/
+│   │   │   ├── models/
+│   │   │   ├── layouts/
+│   │   │   ├── components/
+│   │   │   │   ├── header/
+│   │   │   │   ├── footer/
+│   │   │   └── core.module.ts
+│   │   │
+│   │   ├── shared/
+│   │   │   ├── components/
+│   │   │   │   ├── banner/
+│   │   │   │   ├── product-card/
+│   │   │   │   ├── breadcrumb/
+│   │   │   │   ├── modal/
+│   │   │   │   └── loader/
+│   │   │   ├── directives/
+│   │   │   ├── pipes/
+│   │   │   └── shared.module.ts
+│   │   │
+│   │   ├── features/
+│   │   │   ├── homepage/
+│   │   │   │   ├── hero-banner/
+│   │   │   │   ├── category-tiles/
+│   │   │   │   ├── featured-products/
+│   │   │   │   └── homepage.module.ts
+│   │   │   ├── product/
+│   │   │   │   ├── product-list/
+│   │   │   │   ├── product-detail/
+│   │   │   │   ├── product-filters/
+│   │   │   │   ├── product-sort/
+│   │   │   │   ├── pagination/
+│   │   │   │   └── product.module.ts
+│   │   │   ├── cart/
+│   │   │   │   ├── cart-item/
+│   │   │   │   ├── cart-summary/
+│   │   │   │   └── cart.module.ts
+│   │   │   ├── checkout/
+│   │   │   │   ├── shipping-address-form/
+│   │   │   │   ├── payment-method/
+│   │   │   │   ├── order-summary/
+│   │   │   │   └── checkout.module.ts
+│   │   │   ├── user/
+│   │   │   │   ├── login/
+│   │   │   │   ├── register/
+│   │   │   │   ├── dashboard/
+│   │   │   │   ├── order-history/
+│   │   │   │   └── user.module.ts
+│   │   │
+│   │   ├── app-routing.module.ts
+│   │   ├── app.component.ts
+│   │   └── app.module.ts
+│   │
+│   ├── assets/
+│   ├── environments/
+│   └── styles/
+│
+├── angular.json
+├── package.json
+└── tsconfig.json
