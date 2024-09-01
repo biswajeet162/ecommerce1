@@ -1,0 +1,16 @@
+#products1 {
+    text-align: center;
+}
+
+#products1 .pro-products {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+    /*gap: 20px; /* Optional: Adds space between items */
+}
+
+
+
+
