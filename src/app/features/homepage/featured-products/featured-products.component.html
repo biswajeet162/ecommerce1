@@ -1,1 +1,25 @@
-<p>featured-products works!</p>
+
+<section *ngIf="productType === 'FEATURED'" class="products-list section-p1">  
+    <h2>Featured Products</h2>
+    <p>Summer Collection New Modern Design</p>
+    <div class="pro-products">
+        <app-product-item 
+        *ngFor="let product of featuredProducts"
+        [product]="product">
+      </app-product-item>
+    </div>
+  </section>
+  
+
+  
+<section *ngIf="productType === 'NEWPRODUCT'" class="products-list section-p1">  
+    <h2>New Products</h2>
+    <p>New Modern Design</p>
+    <div class="pro-products">
+        <app-product-item 
+        *ngFor="let product of newArrivedProducts"
+        [product]="product">
+      </app-product-item>
+    </div>
+  </section>
+  

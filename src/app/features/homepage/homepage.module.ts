@@ -16,6 +16,7 @@ import { ProductListComponent } from '../product/product-list/product-list.compo
   imports: [
     CommonModule,
     HomepageRoutingModule,
+    ProductModule
   ]
 })
 export class HomepageModule { }

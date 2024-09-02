@@ -20,6 +20,10 @@ import { PaginationComponent } from './pagination/pagination.component';
     PaginationComponent
 
   ],
+  exports:[
+    ProductListComponent,
+    ProductItemComponent
+  ],
   imports: [
     CommonModule,
     ProductRoutingModule
