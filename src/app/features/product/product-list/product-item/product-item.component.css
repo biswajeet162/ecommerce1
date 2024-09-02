@@ -1,11 +1,5 @@
-.cards{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
 .pro{
-    width: 23%;
+    width: 250px;
     min-width: 250px;
     border: 1px solid #cce7d0;
     padding: 10px 12px;

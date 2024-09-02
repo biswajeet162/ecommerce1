@@ -16,14 +16,6 @@ export interface Product {
 })
 export class ProductListComponent {
 
-  pp: Product =  {
-    imageUrl: 'assets/products/f1.jpg',
-    brand: 'adidas',
-    title: 'Cartoon Astronaut T-Shirts',
-    rating: 5,
-    price: 76
-  }
-
   products: Product[] = [
     {
       imageUrl: 'assets/products/f1.jpg',
@@ -73,6 +65,62 @@ export class ProductListComponent {
       title: 'Training Jackets',
       rating: 5,
       price: 110
+    },
+    {
+      imageUrl: 'assets/products/f8.jpg',
+      brand: 'Puma',
+      title: 'Sports Backpack',
+      rating: 4,
+      price: 80
+    },
+    {
+      imageUrl: 'assets/products/f8.jpg',
+      brand: 'Puma',
+      title: 'Sports Backpack',
+      rating: 4,
+      price: 80
+    },
+    {
+      imageUrl: 'assets/products/f8.jpg',
+      brand: 'Puma',
+      title: 'Sports Backpack',
+      rating: 4,
+      price: 80
+    },
+    {
+      imageUrl: 'assets/products/f8.jpg',
+      brand: 'Puma',
+      title: 'Sports Backpack',
+      rating: 4,
+      price: 80
+    },
+    {
+      imageUrl: 'assets/products/f8.jpg',
+      brand: 'Puma',
+      title: 'Sports Backpack',
+      rating: 4,
+      price: 80
+    },
+    {
+      imageUrl: 'assets/products/f8.jpg',
+      brand: 'Puma',
+      title: 'Sports Backpack',
+      rating: 4,
+      price: 80
+    },
+    {
+      imageUrl: 'assets/products/f8.jpg',
+      brand: 'Puma',
+      title: 'Sports Backpack',
+      rating: 4,
+      price: 80
+    },
+    {
+      imageUrl: 'assets/products/f8.jpg',
+      brand: 'Puma',
+      title: 'Sports Backpack',
+      rating: 4,
+      price: 80
     },
     {
       imageUrl: 'assets/products/f8.jpg',
