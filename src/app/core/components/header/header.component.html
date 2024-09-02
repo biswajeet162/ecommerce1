@@ -1,15 +1,42 @@
 <section id="header">
-
+    <!-- Logo Section -->
     <a href="home"><img src="/assets/logo.png" alt="" class="logo"></a>
-
-    <div>
+    
+    <!-- Search Bar Section -->
+    <div id="search-bar">
+        <input type="text" placeholder="Search...">
+        <button type="submit">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+    </div>
+    
+    <!-- User, Seller, Cart Icons Section -->
+    <div id="nav-container">
         <ul id="nav-bar">
-            <li><a class="active" href="home">Home</a></li>
-            <li><a href="products">Products</a></li>
-            <li><a href="Blog.html">Blog</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+            <li>
+                <a href="login" class="icon-link">
+                    <i class="fa-solid fa-user"></i>
+                    <span>&nbsp;Login</span>
+                </a>
+            </li>
+            <li>
+                <a href="seller" class="icon-link">
+                    <i class="fa-solid fa-user"></i>
+                    <span>&nbsp;Seller</span>
+                </a>
+            </li>
+            <li>
+                <a href="cart" class="icon-link">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span>&nbsp;Cart</span>
+                </a>
+            </li>
+            <li>
+                <a href="option" class="icon-link">
+                    <i class="fa-regular fa-grip-dots-vertical"></i>
+                    <span>&nbsp;. . .</span>
+                </a>
+            </li>
         </ul>
     </div>
 </section>
