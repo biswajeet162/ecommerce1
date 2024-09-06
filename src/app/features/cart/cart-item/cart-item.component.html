@@ -1,1 +1,35 @@
-<p>cart-item works!</p>
+<div class="cart-summary-container">
+    <!-- Left: Product List -->
+    <div class="cart-products card">
+      <h2>My Cart ({{ items.length }} items)</h2>
+  
+      <div *ngFor="let item of items" class="cart-item">
+        <img src="{{ item.imageUrl }}" alt="{{ item.name }}" class="cart-item-image" />
+        <div class="cart-item-info">
+          <h4>{{ item.name }}</h4>
+          <p class="cart-item-price">Price: ₹{{ item.price }}</p>
+  
+          <div class="cart-item-quantity">
+            <button class="quantity-btn" (click)="decreaseQuantity(item)">-</button>
+            <input type="number" [(ngModel)]="item.quantity" min="1" class="quantity-input" />
+            <button class="quantity-btn" (click)="increaseQuantity(item)">+</button>
+          </div>
+  
+          <button class="remove-btn" (click)="removeItem(item)">Remove</button>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Right: Price Summary -->
+    <div class="cart-summary card">
+      <h3>Price Details</h3>
+      <div class="price-details">
+        <p>Price ({{ items.length }} items): <span>₹{{ calculateSubtotal() }}</span></p>
+        <p>Discount: <span>- ₹{{ calculateDiscount() }}</span></p>
+        <p>Delivery Charges: <span>{{ calculateDeliveryCharges() }}</span></p>
+        <p>Total Amount: <span>₹{{ calculateTotal() }}</span></p>
+      </div>
+      <button class="checkout-btn">Proceed to Checkout</button>
+    </div>
+  </div>
+  
