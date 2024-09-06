@@ -1,0 +1,19 @@
+<div class="review-section">
+    <h3>Customer Reviews</h3>
+    <div *ngIf="reviews && reviews.length; else noReviews">
+      <div class="review" *ngFor="let review of reviews">
+        <div class="review-header">
+          <span class="reviewer-name">{{ review.name }}</span>
+          <div class="rating">
+            <i *ngFor="let star of [].constructor(review.rating)" class="fas fa-star"></i>
+          </div>
+        </div>
+        <p class="review-text">{{ review.text }}</p>
+        <p class="review-date">{{ review.date | date }}</p>
+      </div>
+    </div>
+    <ng-template #noReviews>
+      <p>No reviews yet.</p>
+    </ng-template>
+  </div>
+  

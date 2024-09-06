@@ -16,7 +16,7 @@ import { NavbarComponent } from './core/components/navbar/navbar.component';
   
     HeaderComponent,
     FooterComponent,
-    NavbarComponent
+    
   ],
   imports: [
     BrowserModule,

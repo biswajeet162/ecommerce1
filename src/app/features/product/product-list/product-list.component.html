@@ -1,11 +1,71 @@
-<section class="products-list">  
+<div class="container">
+  <!-- Left Navbar with Filters -->
+  <aside class="filter-bar">
+    <h3>Filters</h3>
+    
+    <!-- Filters -->
+    <div class="filter-category">
+      <h4>Category</h4>
+      <ul>
+        <li><input type="checkbox" id="category1"> <label for="category1">Category 1</label></li>
+        <li><input type="checkbox" id="category2"> <label for="category2">Category 2</label></li>
+        <li><input type="checkbox" id="category3"> <label for="category3">Category 3</label></li>
+      </ul>
+    </div>
+    
+    <div class="filter-price">
+      <h4>Price Range</h4>
+      <input type="range" min="0" max="1000" value="500" id="priceRange">
+      <label for="priceRange">Up to $<span id="priceValue">500</span></label>
+    </div>
+    
+    <div class="filter-brand">
+      <h4>Brand</h4>
+      <ul>
+        <li><input type="checkbox" id="brand1"> <label for="brand1">Brand 1</label></li>
+        <li><input type="checkbox" id="brand2"> <label for="brand2">Brand 2</label></li>
+        <li><input type="checkbox" id="brand3"> <label for="brand3">Brand 3</label></li>
+      </ul>
+    </div>
+    
+    <div class="filter-discount">
+      <h4>Discount</h4>
+      <ul>
+        <li><input type="checkbox" id="discount10"> <label for="discount10">10% or more</label></li>
+        <li><input type="checkbox" id="discount20"> <label for="discount20">20% or more</label></li>
+        <li><input type="checkbox" id="discount30"> <label for="discount30">30% or more</label></li>
+      </ul>
+    </div>
+    
+    <div class="filter-size">
+      <h4>Size</h4>
+      <ul>
+        <li><input type="checkbox" id="sizeS"> <label for="sizeS">Small (S)</label></li>
+        <li><input type="checkbox" id="sizeM"> <label for="sizeM">Medium (M)</label></li>
+        <li><input type="checkbox" id="sizeL"> <label for="sizeL">Large (L)</label></li>
+      </ul>
+    </div>
+    
+    <div class="filter-color">
+      <h4>Color</h4>
+      <ul>
+        <li><input type="checkbox" id="colorRed"> <label for="colorRed">Red</label></li>
+        <li><input type="checkbox" id="colorBlue"> <label for="colorBlue">Blue</label></li>
+        <li><input type="checkbox" id="colorGreen"> <label for="colorGreen">Green</label></li>
+      </ul>
+    </div>
+    
+  </aside>
+
+  <!-- Product List -->
+  <section class="products-list">
     <h2>Products</h2>
     <p>Summer Collection New Modern Design</p>
     <div class="pro-products">
-        <app-product-item 
+      <app-product-item
         *ngFor="let product of products"
         [product]="product">
       </app-product-item>
     </div>
   </section>
-  
+</div>

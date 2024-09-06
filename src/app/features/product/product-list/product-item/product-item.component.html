@@ -1,15 +1,13 @@
-
-    <div class="pro">
-        <img [src]="product.imageUrl" alt="">
-        <div class="desc">
-        <span>{{ product.brand }}</span>
-        <h5>{{ product.title }}</h5>
-    
-        <div class="star">
-            <i *ngFor="let star of [].constructor(product.rating)" class="fas fa-star"></i>
-        </div>
-        <h4>${{ product.price }}</h4>
-        </div>
-    
-        <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-    </div> 
+<div class="pro" (click)="onProductClick(product)">
+    <img [src]="product.imageUrl" alt="">
+    <div class="desc">
+      <span>{{ product.brand }}</span>
+      <h5>{{ product.title }}</h5>
+      <div class="star">
+        <i *ngFor="let star of [].constructor(product.rating)" class="fas fa-star"></i>
+      </div>
+      <h4>${{ product.price }}</h4>
+    </div>
+    <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+  </div>
+  

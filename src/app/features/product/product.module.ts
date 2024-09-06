@@ -8,6 +8,10 @@ import { ProductListComponent } from './product-list/product-list.component';
 import { ProductFiltersComponent } from './product-filters/product-filters.component';
 import { ProductSortComponent } from './product-sort/product-sort.component';
 import { PaginationComponent } from './pagination/pagination.component';
+import { NavbarComponent } from '../../core/components/navbar/navbar.component';
+import { FormsModule } from '@angular/forms';
+import { ProductReviewComponent } from './product-review/product-review.component';
+
 
 
 @NgModule({
@@ -17,7 +21,9 @@ import { PaginationComponent } from './pagination/pagination.component';
     ProductItemComponent,
     ProductFiltersComponent,
     ProductSortComponent,
-    PaginationComponent
+    PaginationComponent,
+    NavbarComponent,
+    ProductReviewComponent,
 
   ],
   exports:[
@@ -26,7 +32,8 @@ import { PaginationComponent } from './pagination/pagination.component';
   ],
   imports: [
     CommonModule,
-    ProductRoutingModule
+    FormsModule,  // Add FormsModule to imports array,
+    ProductRoutingModule,
   ]
 })
 export class ProductModule { }
